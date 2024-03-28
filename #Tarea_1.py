@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 #P1)
 #Valores de h y x
 x = np.linspace((1-0.5610), (1+0.5610), 100).reshape((1,100))
-h = np.logspace((10^-8), (10^-1), 18, base=10).reshape((18,1))
+h = np.logspace(-18,-1, 18, base=10).reshape((18,1))
 
 #Valores de la derivada según el enunciado de las funciones dadas
 der_sen_x = (-np.sin(x+2*h)+ 8*np.sin(x+h)-8*np.sin(x-h)+np.sin(x-2*h))/(12*h)
